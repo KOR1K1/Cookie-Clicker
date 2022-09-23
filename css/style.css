@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600;700&display=swap");
+@import url(//db.onlinewebfonts.com/c/cab0131554a65c43f6e73aafff8a9667?family=Lucida+Grande);
+@import url(//db.onlinewebfonts.com/c/4dacabda65930685b68591f097311829?family=Lucida+Grande);
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("/fonts/Lucida Grande V2.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 25px;
+  top: 25px;
+}
+
+.count-click {
+  margin-top: 10px;
+  margin-left: 3px;
+  font-size: 24px;
+}
+
+.cookie-png {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.cookie-png:hover {
+  -webkit-animation: gelatine 0.5s;
+          animation: gelatine 0.5s;
+}
+
+@-webkit-keyframes gelatine {
+  from, to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+@keyframes gelatine {
+  from, to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+.btn.btn-dark {
+  width: 300px;
+  margin-left: 3px;
+  font-weight: 700;
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */
