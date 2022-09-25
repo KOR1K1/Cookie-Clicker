@@ -43,7 +43,7 @@ setInterval(() => {
 	countClick.innerHTML = 'Количество печенья: ' + Number(localStorage.getItem("counter"));
 }, 1000)
 function upgradeCursor(uc) {
-	if (Number(localStorage.getItem("counter")) >= Number(localStorage.getItem("clickerPrice"))) {
+	if (counter >= Number(localStorage.getItem("clickerPrice"))) {
 		counter = counter - clickerPrice
 		Number(localStorage.setItem("counter", counter))
 		counter_two += 1;
@@ -71,7 +71,7 @@ function upgradeCursor(uc) {
 }
 
 function upgradeFarm(uf) {
-	if (Number(localStorage.getItem("counter")) >= Number(farmPrice = localStorage.getItem("farmPrice"))) {
+	if (counter >= Number(localStorage.getItem("farmPrice"))) {
 		counter = Number(localStorage.getItem("counter")) - Number(farmPrice = localStorage.getItem("farmPrice"));
 		Number(localStorage.setItem("counter", counter))
 		lvlUpgradeFarm++
