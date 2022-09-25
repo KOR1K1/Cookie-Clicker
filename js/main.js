@@ -14,7 +14,6 @@ let FarmPerSecond = 0
 let aboutTheUpdate = document.getElementById('abouthui')
 let dontShowAgain = 0
 
-if (localStorage.length == 0) wipeData()
 
 if (localStorage.getItem('dontShowAgain') >= 1) {
 	aboutTheUpdate.classList.add("obnova")
@@ -27,6 +26,8 @@ FarmPerSecond = Number(localStorage.getItem("FarmPerSecond"));
 lvlUpgradeClicker =Number( localStorage.getItem("lvlUpgradeClicker"))
 lvlUpgradeFarm = Number(localStorage.getItem("lvlUpgradeFarm"))
 counter_two = Number(localStorage.getItem("counter_two"))
+
+if (localStorage.length == 0) wipeData()
 
 
 countClick.innerHTML = 'Количество печенья: ' + Number(localStorage.getItem("counter"));
