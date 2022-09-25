@@ -128,4 +128,16 @@ p {
   position: relative;
   margin-top: auto;
   margin-bottom: 20px;
+}
+
+@media screen and (orientation: portrait) {
+  .xz {
+    margin-right: 740px;
+    width: 300px;
+  }
+  .button_aboutTheUpdate {
+    position: relative;
+    width: 250px;
+    margin-bottom: 1650px;
+  }
 }/*# sourceMappingURL=style.css.map */
