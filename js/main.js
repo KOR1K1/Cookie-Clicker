@@ -30,9 +30,9 @@ counter_two = Number(localStorage.getItem("counter_two"))
 if (localStorage.length == 0) wipeData()
 
 
-countClick.innerHTML = 'Количество печенья: ' + Number(localStorage.getItem("counter"));
-upgradeCursorLet.innerHTML = '<p>Улучшить курсор</p>' + '<p>' + 'Цена: ' + localStorage.getItem("clickerPrice") + '</p>' + 'Уровень ' + localStorage.getItem("lvlUpgradeClicker")
-upgradeFarmLet.innerHTML = '<p>Купить ферму</p>' + '<p>' + 'Цена: ' + localStorage.getItem("farmPrice") + '</p>' + 'Уровень ' + localStorage.getItem("lvlUpgradeFarm")
+countClick.innerHTML = 'Количество печенья: ' + counter;
+upgradeCursorLet.innerHTML = '<p>Улучшить курсор</p>' + '<p>' + 'Цена: ' + clickerPrice + '</p>' + 'Уровень ' + lvlUpgradeClicker
+upgradeFarmLet.innerHTML = '<p>Купить ферму</p>' + '<p>' + 'Цена: ' + farmPrice + '</p>' + 'Уровень ' + lvlUpgradeFarm
 
 function onClickCookie() {
 	counter += counter_two
