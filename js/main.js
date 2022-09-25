@@ -14,9 +14,7 @@ let FarmPerSecond = 0
 let aboutTheUpdate = document.getElementById('abouthui')
 let dontShowAgain = 0
 
-if(localStorage.getItem('counter') == null) {
-	wipeData();
-};
+if (localStorage.length == 0) wipeData()
 
 if (localStorage.getItem('dontShowAgain') >= 1) {
 	aboutTheUpdate.classList.add("obnova")
