@@ -13,17 +13,25 @@
   font-weight: 700;
 }
 
+html {
+  overflow: hidden;
+}
+
 p {
   margin: 0;
   padding: 0;
 }
 
 .container {
+  width: 1000px;
   position: absolute;
   align-items: center;
   justify-content: center;
-  left: 25px;
+  left: 3px;
   top: 25px;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1920px;
 }
 
 .count-click {
@@ -78,4 +86,46 @@ p {
   margin-left: 3px;
   font-weight: 700;
   margin-top: 10px;
+}
+
+.btn.btn-danger {
+  width: 300px;
+  margin-left: 3px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.btn.btn-danger.wipe-data {
+  margin-top: 30px;
+}
+
+.added {
+  margin-left: -30px;
+}
+.added li {
+  margin-left: 35px;
+}
+
+.update-01 {
+  margin-left: 150px;
+}
+
+.btn.btn-secondary.obnova {
+  visibility: hidden;
+}
+
+.xz {
+  width: 240px;
+  min-height: 100vh;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.button_aboutTheUpdate {
+  width: 250px;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

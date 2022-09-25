@@ -15,6 +15,7 @@
 		<title>Cookie Clicker</title>
 	</head>
 	<body>
+	<div class="page">
 		<div class="container">
 			<img
 				class="cookie-png"
@@ -28,7 +29,7 @@
 				type="button"
 				id="upgrade-cursor"
 				onclick="upgradeCursor(this)"
-				class="btn btn-dark"
+				class="btn btn-dark upg_cursor"
 			>
 				<p>Улучшить курсор</p>
 				<p>Цена: 100</p></button
@@ -42,8 +43,42 @@
 				<p>Купить ферму</p>
 				<p>Цена: 1500</p>
 			</button>
+			<br><button id="wipe-data" onclick="wipeData(this)" type="button" class="btn btn-danger wipe-data p-3">Сбросить прогресс</button>
 		</div>
+	</div>
+		<div class="xz">
+		<div class="button_aboutTheUpdate">
+			<button id="abouthui" title="Обновление 1.1" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#AboutTheUpdate" >Сведения об обновлении</button>
+		</div>
+	</div>
 
+		<div class="modal fade" id="AboutTheUpdate" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Об обновлении</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p class="update-01">Обновление 1.1</p>
+						<br>
+						<ul class="added"> Добавлено:
+							<li>Авто сохранение прогресса</li>
+							<li>Сброс прогресса</li>
+						</ul>	
+						<!-- <p>Добавлено: Авто сохранение прогресса, Сброс прогресса</p> -->
+							<br>
+							<p>Починены небольшие баги</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="hideAbout(this)">Ок</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
 		<script src="js/main.js"></script>
 		<!-- JavaScript Bundle with Popper -->
 		<script
